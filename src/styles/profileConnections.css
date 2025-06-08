@@ -1,0 +1,200 @@
+.connections-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.connections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.connections-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.connections-right {
+  margin-left: auto;
+}
+
+/* Toggle Capsule Group */
+.toggle-wrapper {
+  position: relative;
+  display: flex;
+  background-color: #f0f4f9;
+  border-radius: 999px;
+  padding: 4px;
+  width: fit-content;
+  height: 42px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 2px; /* added */
+}
+
+.toggle-tab {
+  flex: 1 1 auto;
+  border: none;
+  outline: none;
+  padding-inline: 1.2rem; /* more controlled horizontal padding */
+  border-radius: 999px;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.02em;
+  min-width: 110px; /* ensures enough space for both tabs */
+}
+
+.toggle-tab.active {
+  color: white;
+  font-weight: 700;
+}
+
+.toggle-indicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: calc(50% - 1px); /* subtract gap for alignment */
+  background: linear-gradient(135deg, #2979ff, #1565c0);
+  border-radius: 999px;
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.4);
+  z-index: 1;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.toggle-indicator.following {
+  transform: translateX(100%);
+}
+
+
+/* Search Bar Container aligned with toggle height */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+  height: 42px;
+  width: 260px;
+}
+
+.search-bar-container:focus-within {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.search-icon {
+  font-size: 1.1rem;
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-connections {
+  text-align: center;
+  color: gray;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+/* --- DO NOT MODIFY: Connection Card Styling --- */
+.connection-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.connection-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.connection-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.connection-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.connection-initials {
+  padding: 0.5rem;
+}
+
+.connection-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.connection-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+}
+
+.connection-name:hover {
+  text-decoration: underline;
+}
+
+.connection-title {
+  font-size: 0.9rem;
+  color: #888;
+}

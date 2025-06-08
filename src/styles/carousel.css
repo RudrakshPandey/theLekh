@@ -1,0 +1,66 @@
+.homepage-carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+.homepage-carousel-slide {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade 1.7s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Dots directly below each slide */
+.carousel-dots-container {
+  margin-top: 1rem; /* <-- the consistent gap below the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-dots {
+  cursor: pointer;
+}
+
+.carousel-dots svg {
+  transition: 0.3s ease;
+  color: #bbb;
+}
+
+.carousel-dots svg.active {
+  color: #263246;
+  border: 1px solid #263246;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 920px) {
+  .homepage-carousel-slide {
+    height: auto;
+    max-height: 100%;
+  }
+}

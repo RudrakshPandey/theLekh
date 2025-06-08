@@ -1,0 +1,157 @@
+.profile-notifications-c {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-notif-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  color: #000; /* black text */
+  cursor: pointer;
+  position: relative; /* for red dot */
+}
+
+.profile-notif-card:hover {
+  background-color: #e6f0ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-notif-card.unread {
+  background-color: #fdfdfd;
+}
+
+.profile-notif-card.unread::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ff3b3b;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ff3b3b88;
+}
+
+.profile-notif-card.read {
+  opacity: 0.85;
+}
+
+.profile-notif-avatar-c img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-notif-avatar-c {
+  margin-right: 0.75rem;
+}
+
+.profile-notif-info {
+  flex: 1;
+}
+
+.profile-notif-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+.notif-time {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.notif-btn {
+  background-color: #eee;
+  color: #333;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notif-btn:hover {
+  background-color: #dcdcdc;
+}
+
+.notif-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.notif-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #666;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.notif-checkbox::after {
+  content: '✔';
+  font-size: 0.75rem;
+  color: #444;
+  display: none;
+  line-height: 1;
+}
+
+.notif-checkbox:checked {
+  border-color: #444;
+  background-color: #f0f0f0;
+}
+
+.notif-checkbox:checked::after {
+  display: block;
+}
+
+.profile-notif-card.selected {
+  background-color: #eef5ff;
+  border: 1px solid #cce0ff;
+}
+
+.no-notifs {
+  text-align: center;
+  color: #999;
+  margin-top: 2rem;
+}
+
+.profile-notif-link {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-notif-link:hover {
+  text-decoration: underline;
+}
+
+.profile-notif-link strong {
+  font-weight: 700;
+}

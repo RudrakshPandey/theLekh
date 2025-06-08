@@ -1,0 +1,157 @@
+footer {
+  position: relative;
+  background-color: #030301;
+  color: #eaeaea;
+  padding: 3rem 2rem;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo & Branding */
+.footer-logo-c {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-c svg {
+  color: #ffd86a;
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  animation: globe-spin 15s linear infinite;
+}
+
+.footer-logo-c p {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffd86a; /* heading color */
+}
+
+@keyframes globe-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Credits Section */
+.footer-credits-c {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #eaeaea;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.footer-credits-c div a {
+  color: #eaeaea;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.footer-credits-c div a:hover {
+  text-decoration: underline;
+}
+
+.footer-credits-c div a svg {
+  margin-right: 0.4rem;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-link-c {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.footer-link-c span {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #ffd86a; /* heading color */
+}
+
+.footer-link-c p {
+  margin: 0.3rem 0;
+}
+
+.footer-link-c p a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: 400;
+}
+
+.footer-link-c p a:hover {
+  text-decoration: underline;
+}
+
+.footer-link-c p a svg {
+  margin-right: 0.4rem;
+}
+
+/* Banner Section */
+.footer-banner {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-banner p {
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-banner p a {
+  color: #eaeaea;
+  text-decoration: underline;
+  margin: 0 0.3rem;
+}
+
+/* Hide background SVGs */
+footer .svg-c {
+  display: none;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 640px) {
+  .footer-logo-c p {
+    font-size: 1.3rem;
+  }
+
+  .footer-credits-c {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-banner {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}

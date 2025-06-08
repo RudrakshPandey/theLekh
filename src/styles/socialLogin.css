@@ -1,0 +1,26 @@
+/* Container to constrain Google button size */
+.custom-google-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Override internal Google button styles */
+.custom-google-login-wrapper > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Apply styles to the iframe container that Google renders */
+.custom-google-login-wrapper iframe {
+  height: 48px !important;
+  border-radius: 9999px !important; /* pill shape */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: scale(1.03); /* slightly larger */
+  transition: all 0.2s ease;
+}
+
+/* Optional: subtle hover effect using scale (applies to container) */
+.custom-google-login-wrapper:hover iframe {
+  transform: scale(1.05);
+}

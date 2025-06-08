@@ -1,0 +1,86 @@
+.confirm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  animation: fadeInBackdrop 0.3s ease forwards;
+}
+
+@keyframes fadeInBackdrop {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.confirm-modal {
+  background: #fff;
+  border-radius: 8px;
+  width: 320px;
+  max-width: 90vw;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: slideInModal 0.3s ease forwards;
+  text-align: center;
+}
+
+@keyframes slideInModal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirm-modal h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.confirm-modal p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.confirm-modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.btn-cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #bdbdbd;
+}
+
+.btn-confirm {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #c12e2a;
+}
