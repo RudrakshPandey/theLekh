@@ -24,6 +24,7 @@ input:-webkit-autofill {
 
 .login-social-section {
   margin-top: 2rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,4 +475,18 @@ input .error {
     border-radius: 0;
     box-shadow: none;
   }
+}
+
+.custom-google-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensures the inner Google button respects full width */
+.custom-google-login-wrapper > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex;
+  justify-content: center;
 }
