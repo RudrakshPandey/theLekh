@@ -416,7 +416,7 @@ input .error {
 .login-page-wrapper {
   display: flex;
   flex-direction: row;
-  min-height: calc(100vh - 72px); /* adjusts for navbar height */
+  height: 100vh; /* Fill entire viewport height */
   width: 100%;
 }
 
@@ -424,14 +424,15 @@ input .error {
 .login-left {
   flex: 1;
   display: flex;
-  align-items: center; /* vertical center */
+  align-items: center;
   justify-content: center;
   padding: 3rem;
   background-color: #ffffff;
 }
 
+/* Optional: Add overflow handling if content overflows */
 .login-container {
-  max-width: 420px; /* limit form width */
+  max-width: 420px;
   width: 100%;
   padding: 2rem;
   border-radius: 12px;
@@ -441,42 +442,36 @@ input .error {
 /* --- Right (Illustration Area) --- */
 .login-right {
   flex: 1;
-  background-color: #ffd700;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffd700;
   padding: 2rem;
 }
 
+/* Make image responsive */
 .login-right img {
   max-width: 90%;
   height: auto;
 }
 
-/* --- Responsive Stacking --- */
+/* --- Responsive Stacking (Mobile) --- */
 @media screen and (max-width: 768px) {
   .login-page-wrapper {
     flex-direction: column;
-    min-height: auto;
+    height: auto; /* Allow scroll on mobile */
   }
 
   .login-left,
   .login-right {
     width: 100%;
     padding: 2rem 1rem;
-  }
-
-  .login-left {
-    padding-top: 1.5rem;
-  }
-
-  .login-right {
-    padding: 1rem;
+    min-height: 50vh; /* Optional: Each takes half screen height */
   }
 
   .login-container {
     padding: 1.5rem;
-    box-shadow: none;
     border-radius: 0;
+    box-shadow: none;
   }
 }
