@@ -38,7 +38,7 @@ const DashboardPage = () => {
       <div className='dashboardpage-container'>
         <section className='dashboardpage-greeting'>
           <h1>Dashboard</h1>
-          <p>{`John's overall insights`}</p>
+          <p>{`${user?.name} overall insights`}</p>
         </section>
         <section className='dashboardpage-cards-container'>
           {/* blogs */}
