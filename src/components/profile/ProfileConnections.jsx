@@ -1,4 +1,4 @@
-import "../../styles/ProfileConnections.css";
+import "../../styles/profileConnections.css";
 import ProfileConnectionCard from "./ProfileConnectionCard";
 import { useContext, useEffect, useState } from "react";
 import AuthContext from "../../context/AuthContext";
