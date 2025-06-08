@@ -6,8 +6,10 @@ import { AuthProvider } from './context/AuthContext.jsx';
 import { ToastProvider } from './context/ToastContext.jsx';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
+  const GOOGLE_CLIENT_URL = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+
 createRoot(document.getElementById('root')).render(
-    <GoogleOAuthProvider clientId="59875100333-9p2rjibfdi2mgc1kopboudv84ios76pe.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_URL}>
     <AuthProvider>
       <ToastProvider>
         <App />
