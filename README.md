@@ -12,28 +12,14 @@
 <p align="center">
   <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
   <img src="https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux" />
-  <img src="https://img.shields.io/badge/WebSocket-Real-Time-UX-green" />
-  <img src="https://img.shields.io/badge/AI-Gemini-AI-orange" />
-  <img src="https://img.shields.io/badge/OAuth2-Secure-Auth-success" />
-  <img src="https://img.shields.io/badge/Hosted-on-Vercel-black?logo=vercel" />
 </p>
 
 ---
 
-## 🌟 **Live Preview**
+## **Hero Screenshot**
 
 <p align="center">
-  <a href="https://the-lekh-frontend.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live-Demo-FrontEnd-Web-App-blue?style=for-the-badge" alt="Live Demo">
-  </a>
-</p>
-
----
-
-## 📌 **Hero Screenshot**
-
-<p align="center">
-  <img src="./assets/lekh-hero.png" alt="Lekh Landing Screenshot" width="900" />
+  <img src="./src/assets/images/LandingPage.png" alt="Lekh Landing Screenshot" width="900" />
 </p>
 
 > *Home page showcasing a clean product brand, clear CTA, and polished frontend UI.*
@@ -206,19 +192,13 @@ This separation shows **full stack architecture maturity** — cleanly decouplin
 
 ---
 
-## 📈 **Recruiter-Friendly Summary**
-
 > **Lekh Frontend** demonstrates production-level frontend engineering — scalable state management, real-time UX, API integration, secure workflows, and AI features — all synchronized with a backend API layer.
-
-Perfect for:
-
-* UI/Frontend Engineer roles
-* Full-Stack positions
-* Modern web engineering interviews
 
 ---
 
 ## 👨‍💻 **About the Developer**
+
+<p align="center"> <strong>Rudraksh Pandey</strong><br/> Frontend / Full-Stack Developer </p> <p align="center"> <a href="https://github.com/RudrakshPandey" target="_blank"> <img src="https://img.shields.io/badge/GitHub-RudrakshPandey-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/in/rudraksh-pandey-b21000135" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Rudraksh%20Pandey-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="mailto:rudrakshpandey8@gmail.com"> <img src="https://img.shields.io/badge/Email-Contact%20Me-374151?style=for-the-badge&logo=gmail&logoColor=white" /> </a> </p>
 
 **Rudraksh Pandey**
 Frontend / Full-Stack Developer
